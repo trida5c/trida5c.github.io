@@ -58,26 +58,28 @@ main {
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 3rem;
+/* Text + Foto */
+.text-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #4CAF50;
-}
-
-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #555;
+/* Photo Section */
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Video Section */
 .video-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
 }
 
@@ -87,14 +89,6 @@ section p {
     border-radius: 10px;
     border: 4px solid #4CAF50;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Photo Section */
-.photo-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Students List */
@@ -133,14 +127,9 @@ footer {
     header h1 {
         font-size: 2rem;
     }
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media (max-width: 768px) {
-    /* Odkazy v navigaci zůstanou vedle sebe i na mobilu */
     header nav ul {
         flex-direction: row;
         gap: 1rem;
