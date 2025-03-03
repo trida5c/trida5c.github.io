@@ -58,6 +58,10 @@ main {
     margin: 0 auto;
 }
 
+.green-text {
+    color: #4CAF50;
+}
+
 /* Text + Foto */
 .text-photo-container {
     display: flex;
@@ -74,11 +78,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-h2 {
-    color: #4CAF50; /* Zelená barva */
-}
-
 
 /* Video Section */
 .video-container {
