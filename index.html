@@ -12,7 +12,7 @@
             background-color: white;
             color: #333;
         }
-        .photo-container {
+        .photo-container, .music-container {
             text-align: center;
             margin: 2rem auto;
         }
@@ -22,33 +22,35 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .music-container {
-            text-align: center;
-            margin: 2rem auto;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>My jsme 5.C!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="https://trida5c.github.io/zaci">Žáci</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
             <h2>O třídě 5.C</h2>
-            <p>Jsme skvělá parta žáků, kteří se rádi učí, objevují nové věci a baví se spolu.</p>
+            <p>Jsme skvělá parta žáků...</p>
         </section>
         <section class="photo-container">
-            <img src="web/foto/main.png" alt="Třídní fotka">
+            <img src="web/foto/placeholder.jpg" alt="Třídní fotka">
         </section>
         <section class="music-container">
-            <h2>Oblíbená hudba 5.C</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" 
+            <h2>Náš "rap" Chodím do školy</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI?si=nPqgKQuH2OsqtMR2" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Všechna práva vyhrazena.</p>
+        <p>"5.C je třída která neumírá!" -Martin</p>
     </footer>
     <script src="web/static/script.js"></script>
 </body>
