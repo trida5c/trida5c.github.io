@@ -24,20 +24,17 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
+/* Navigace */
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    padding: 0;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 header nav ul li a {
@@ -45,6 +42,7 @@ header nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 1.1rem;
+    padding: 0.5rem 1rem;
     transition: color 0.3s ease;
 }
 
@@ -79,9 +77,8 @@ section p {
 /* Video Section */
 .video-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
 }
 
 .video-container video {
@@ -143,10 +140,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Odkazy v navigaci zůstanou vedle sebe i na mobilu */
     header nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
-        padding: 0;
     }
 
     .students-container {
