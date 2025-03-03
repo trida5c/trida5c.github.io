@@ -11,16 +11,38 @@
         body {
             background-color: white;
             color: #333;
-        }
-        .photo-container, .music-container {
             text-align: center;
+        }
+        .photo-container, .video-container {
+            max-width: 100%;
             margin: 2rem auto;
+            padding: 0 1rem;
         }
         .photo-container img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        video {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+            }
+            nav ul li {
+                list-style: none;
+            }
         }
     </style>
 </head>
@@ -42,10 +64,10 @@
         <section class="photo-container">
             <img src="web/foto/placeholder.jpg" alt="Třídní fotka">
         </section>
-        <section class="music-container">
+        <section class="video-container">
             <h2>Náš "rap" Chodím do školy</h2>
-            <video width="560" height="315" controls>
-                <source src="web/video/placeholder.mp4" type="video/mp4">
+            <video controls>
+                <source src="web/video/main.mp4" type="video/mp4">
                 Váš prohlížeč nepodporuje přehrávání videa.
             </video>
         </section>
@@ -53,6 +75,5 @@
     <footer>
         <p>"5.C je třída která neumírá!" -Martin</p>
     </footer>
-    <script src="web/static/script.js"></script>
 </body>
 </html>
