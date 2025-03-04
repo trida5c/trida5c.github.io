@@ -60,67 +60,39 @@ main {
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 3rem;
+/* Učitel */
+.teacher-section {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-/* Nadpisy zeleně */
-h2 {
+.teacher {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #4CAF50; /* Zelená barva */
-}
-
-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #555;
-}
-
-/* Photo Section */
-.photo-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Video Section */
-.video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem auto;
-}
-
-.video-container video {
-    width: 100%;
-    max-width: 560px;
-    border-radius: 10px;
-    border: 4px solid #4CAF50;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
 /* Students List */
 .students-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Zarovnání na střed */
-    text-align: center; /* Zarovnání textu */
-    gap: 1rem;
-    padding: 0 1rem;
+    justify-content: center; /* Zarovná na střed */
+    gap: 3rem; /* Mezera mezi sloupci */
+    flex-wrap: wrap;
 }
 
 .column {
-    width: 100%; /* Zajistí stejné zarovnání */
-    max-width: 400px; /* Omezí šířku pro lepší čitelnost */
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
 }
 
-/* Teacher */
-.teacher {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
 }
 
 /* Footer */
@@ -134,16 +106,6 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -158,9 +120,5 @@ footer {
 
     .column {
         text-align: center;
-    }
-
-    section p {
-        font-size: 1rem;
     }
     }
