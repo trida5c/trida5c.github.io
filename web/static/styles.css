@@ -65,7 +65,7 @@ section {
 }
 
 /* Nadpisy zeleně */
-h2 {
+h2, .green-text {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #4CAF50; /* Zelená barva */
