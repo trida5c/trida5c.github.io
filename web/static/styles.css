@@ -108,12 +108,13 @@ section p {
     flex-wrap: wrap;
     gap: 2rem;
     padding: 0 1rem;
+    text-align: center; /* Zarovnání žáků na střed */
 }
 
 .column {
     flex: 1;
     min-width: 200px;
-    text-align: left;
+    text-align: center; /* Zarovnání textu sloupců na střed */
 }
 
 .teacher {
