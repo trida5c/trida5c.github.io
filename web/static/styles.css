@@ -161,6 +161,7 @@ footer {
 
     .column {
         text-align: center;
+        align-items: center;
     }
 
     section p {
