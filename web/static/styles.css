@@ -104,18 +104,19 @@ section p {
 /* Students List */
 .students-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center; /* Zarovnání na střed */
+    text-align: center; /* Zarovnání textu */
+    gap: 1rem;
     padding: 0 1rem;
 }
 
 .column {
-    flex: 1;
-    min-width: 200px;
-    text-align: left;
+    width: 100%; /* Zajistí stejné zarovnání */
+    max-width: 400px; /* Omezí šířku pro lepší čitelnost */
 }
 
+/* Teacher */
 .teacher {
     font-size: 1.8rem;
     font-weight: bold;
