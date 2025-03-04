@@ -115,6 +115,9 @@ section p {
     flex: 1;
     min-width: 200px;
     text-align: center; /* Zarovnání textu sloupců na střed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .teacher {
