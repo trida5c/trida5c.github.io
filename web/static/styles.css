@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
 }
 
 /* Header */
@@ -24,18 +25,19 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+}
+
+header nav ul li {
+    display: inline;
 }
 
 header nav ul li a {
@@ -60,13 +62,13 @@ main {
 
 section {
     margin-bottom: 3rem;
-    text-align: center;
 }
 
-section h2 {
+/* Nadpisy zeleně */
+h2, .green-text {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #4CAF50;
+    color: #4CAF50; /* Zelená barva */
 }
 
 section p {
@@ -75,27 +77,49 @@ section p {
     color: #555;
 }
 
+/* Photo Section */
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Video Section */
 .video-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 videa vedle sebe */
-    gap: 2rem;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
 }
 
-.video-container iframe {
+.video-container video {
     width: 100%;
-    height: 200px;
+    max-width: 560px;
     border-radius: 10px;
-    border: 4px solid #4CAF50; /* Zelený okraj */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 4px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.video-container iframe:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín při najetí */
+/* Students List */
+.students-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.teacher {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -105,30 +129,34 @@ footer {
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
-    position: sticky;
-    bottom: 0;
     width: 100%;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
     .video-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 videa na řádku pro menší obrazovky */
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width: 768px) {
-    .video-container {
-        grid-template-columns: 1fr; /* 1 video na řádku pro velmi malé obrazovky */
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
     header nav ul {
         flex-direction: column;
         gap: 1rem;
+        padding: 0;
+    }
+
+    .students-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        text-align: center;
     }
 
     section p {

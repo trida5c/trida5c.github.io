@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My jsme 5.C!</title>
-    <link rel="stylesheet" href="web/static/styles.css">
+    <link rel="stylesheet" href="https://trida5c.github.io/web/static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="web/static/favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            background-color: white;
-            color: #333;
-        }
-        .photo-container, .music-container {
-            text-align: center;
-            margin: 2rem auto;
-        }
-        .photo-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -36,20 +20,22 @@
     </header>
     <main>
         <section>
-            <h2>O třídě 5.C</h2>
+            <h2 class="green-text">O třídě 5.C</h2>
             <p>Jsme skvělá parta žáků...</p>
         </section>
         <section class="photo-container">
-            <img src="web/foto/placeholder.jpg" alt="Třídní fotka">
+            <img src="web/media/foto.jpg" alt="Třídní fotka">
         </section>
-        <section class="music-container">
-            <h2>Náš "rap" Chodím do školy</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?si=p9TMWiuEvc60w9N9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="video-container">
+            <h2 class="green-text">Náš "rap" Chodím do školy</h2>
+            <video controls>
+                <source src="web/media/video.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje přehrávání videa.
+            </video>
         </section>
     </main>
     <footer>
-        <p>"5.C je třída která neumírá!" -Martin</p>
+        <p>"5.C je třída, která neumírá!" - Martin</p>
     </footer>
-    <script src="web/static/script.js"></script>
 </body>
 </html>
